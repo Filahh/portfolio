@@ -1,4 +1,4 @@
-import user_image from './user-image.png';
+import user_image from './user-image.jpg';
 import code_icon from './code-icon.png';
 import code_icon_dark from './code-icon-dark.png';
 import edu_icon from './edu-icon.png';
@@ -9,6 +9,9 @@ import vscode from './vscode.png';
 import firebase from './firebase.png';
 import figma from './figma.png';
 import git from './git.png';
+import next_js from './next-js.png';
+import vercel from './vercel.png';
+import github_logo from './github-logo.png';
 import mongodb from './mongodb.png';
 import right_arrow_white from './right-arrow-white.png';
 import logo from './logo.png';
@@ -35,6 +38,7 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import henry_logo from './henry-logo.png';
 
 export const assets = {
     user_image,
@@ -54,6 +58,9 @@ export const assets = {
     logo_dark,
     mail_icon,
     mail_icon_dark,
+    next_js,
+    vercel,
+    github_logo,
     profile_img,
     download_icon,
     hand_icon,
@@ -73,24 +80,22 @@ export const assets = {
     right_arrow,
     send_icon,
     right_arrow_bold,
-    right_arrow_bold_dark
+    right_arrow_bold_dark,
+    henry_logo,
 };
 
 export const workData = [
     {
-        title: 'Frontend project',
+        title: 'Home Rentals Agency',
         description: 'Web Design',
-        bgImage: '/work-1.png',
+        bgImage: '/home-rentals.png',
+        link: 'https://home-rentals-agency-website.vercel.app/',
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
-        bgImage: '/work-2.png',
-    },
-    {
-        title: 'Photography site',
+        title: 'Ecommerce Website',
         description: 'Web Design',
-        bgImage: '/work-3.png',
+        bgImage: '/e-commerce.png',
+        link: 'https://ecommerce-sanity-stripe-filahh.vercel.app/',
     },
     {
         title: 'UI/UX designing',
@@ -100,18 +105,17 @@ export const workData = [
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
+    { icon: assets.web_icon, title: 'Web design', description: 'Web design is all about building sleek, functional websites using modern stacks like Next.js.  ', link: '' },
+    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses more on translating minimalist aesthetics into clean, responsive layouts users actually enjoy.', link: '' },
+    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication', link: '' },
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js, Tailwind, Sanity' },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Sc in Computer Science' },
     { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    assets.vscode, assets.mongodb, assets.figma, assets.git,assets.next_js, assets.vercel, assets.github_logo
 ];

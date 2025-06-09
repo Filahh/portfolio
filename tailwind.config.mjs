@@ -26,9 +26,6 @@ const config = {
         },
       },
     },
-    darkMode: 'selector',
-    plugins: [],
-    
   };
 
 export default config;

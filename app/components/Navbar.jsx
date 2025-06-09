@@ -3,7 +3,7 @@ import { assets } from '@/assets/assets'
 import Image from 'next/image'
 import React, { useRef, useEffect, useState } from 'react'
 
-const Navbar = ({isDarkMode, setIsDarkMode}) => {
+const Navbar = () => {
     const[isScroll, setIsScroll] = React.useState(false);
     const sideMenuRef = React.useRef();
 
@@ -27,13 +27,13 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
     return(
 
         <>
-            <div className="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden">
+            <div className="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
                 <Image src={assets.header_bg_color} alt='' className='w-full' />
             </div>
             <nav 
-            className={`w-full fixed px-5 lg:px-8 xl:px-{8%} py-4 flex items-center justify-between z-50 ${isScroll ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm dark:bg-neutral-900 dark:shadow-white/20" : ""}`}>
+            className={`w-full fixed px-5 lg:px-8 xl:px-{8%} py-4 flex items-center justify-between z-50 ${isScroll ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm " : ""}`}>
                 <a href="#top">
-                    <Image src={isDarkMode ? assets.logo_dark : assets.logo} alt='' className='w-28 cursor-pointer mr-10' />
+                    <Image src={assets.henry_logo} alt='' className='w-28 cursor-pointer mr-10' />
                 </a>
 
                 <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? "" : "bg-white shadow-sm bg-opacity-50"}`}>
@@ -44,10 +44,6 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
                     <li><a className='font-Ovo' href="#contact">Contact</a></li>
                 </ul>
                 <div className='flex items-center gap-4'>
-
-                    <button onClick={()=>setIsDarkMode(prev => !prev)}>
-                        <Image src={isDarkMode ? assets.sun_icon : assets.moon_icon} alt='icon' className='w-6' />
-                    </button>
 
                     <a href="#contact" className='hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo'> Contact <Image src={assets.arrow_icon} alt='' className='w-3' /></a>
 
