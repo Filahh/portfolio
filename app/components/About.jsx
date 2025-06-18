@@ -14,7 +14,7 @@ const About = () => {
       initial={{ opacity: 0, y: -20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.2 }}
-      className='text-center mb-2 text-lgfont-Ovo'>Introduction</motion.h4>
+      className='text-center mb-2 text-lg font-Ovo'>Introduction</motion.h4>
       <motion.h2 
       initial={{ opacity: 0, y: -20 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -36,8 +36,8 @@ const About = () => {
         <motion.div 
         initial={{ opacity: 0}}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.6, delay: 0.7 }}className="flex-1">
-            <p className='mb-10 max-2xl font-Ovo'>
+        transition={{ duration: 0.6, delay: 0.7 }}className="flex- w-full px -4 sm:px-0">
+            <p className='mb-10 max-2xl font-Ovo text-base leading-relaxed'>
                 I am an experienced Frontend Developer with a passion for creating dynamic and responsive web applications. With a strong foundation in HTML, CSS, and JavaScript, I specialize in building user-friendly interfaces that enhance the overall user experience. My expertise extends to frameworks like React and Next.js, allowing me to develop scalable and efficient web solutions. I am committed to continuous learning and staying updated with the latest industry trends to deliver high-quality projects that meet client needs.
             </p>
 
@@ -45,7 +45,7 @@ const About = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.9 }}
-            className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl'>
+            className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-3xl'>
               {infoList.map(({icon, iconDark, title, description}, index) => (
                 <motion.li 
                 whileHover={{ scale: 1.05 }}
