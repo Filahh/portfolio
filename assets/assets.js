@@ -39,6 +39,7 @@ import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import henry_logo from './henry-logo.png';
+import chopify_pic from './public/chopify-pic.png';
 
 export const assets = {
     user_image,
@@ -82,9 +83,16 @@ export const assets = {
     right_arrow_bold,
     right_arrow_bold_dark,
     henry_logo,
+    chopify_pic,
 };
 
 export const workData = [
+    {
+        title: 'Chopify',
+        description: 'Web Design',
+        bgImage: './chopify-pic.png',
+        link: 'https://chopify-git-main-filahhs-projects.vercel.app/',
+    },
     {
         title: 'Home Rentals Agency',
         description: 'Web Design',
